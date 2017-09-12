@@ -9,7 +9,7 @@ Build Staps
 
 2.nuget CNTK.GPU
 
-run Test()
+run CNTKAccess.Test()
 
 If you need pretraining data for resnet download from here
 
