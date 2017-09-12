@@ -11,4 +11,8 @@ Build Staps
 
 run Test()
 
+If you need pretraining data for resnet download from here
+
+https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet
+
 How to use the training side is unknown
