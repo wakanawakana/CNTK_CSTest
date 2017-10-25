@@ -24,6 +24,7 @@ namespace WpfApplication1
         {
             InitializeComponent();
             CNTKAccess.Test();
+            CNTKAccess.TrainTest();
         }
     }
 }
