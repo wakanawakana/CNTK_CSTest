@@ -12,7 +12,7 @@ This code is for checking whether various DeepLearning can be executed with CNTK
 - run CNTKAccess.Test() <- foward
 - run CNTKAccess.TrainTest() <- training
 
-<img src="log.jpg">
+<img src="log.JPG">
 
 ##Pretraind data
 If you need pretraining data for resnet download from here
