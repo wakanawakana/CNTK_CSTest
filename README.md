@@ -3,16 +3,22 @@ Use CNTK from C #
 
 This code is for checking whether various DeepLearning can be executed with CNTK CPU and GPU version
 
-Build Staps
+##Build Staps
 
-1.nuget CNTK.CPUONLY
+- nuget CNTK.CPUONLY
+- nuget CNTK.GPU
 
-2.nuget CNTK.GPU
+##Execute Staps
+- run CNTKAccess.Test() <- foward
+- run CNTKAccess.TrainTest() <- training
 
-run CNTKAccess.Test()
+<img src="log.jpg">
 
+##Pretraind data
 If you need pretraining data for resnet download from here
 
 https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet
 
 How to use the training side is unknown
+
+
