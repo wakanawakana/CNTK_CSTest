@@ -7,6 +7,8 @@ This code is for checking whether various DeepLearning can be executed with CNTK
 
 - nuget CNTK.CPUONLY
 - nuget CNTK.GPU
+- select target x64
+- build
 
 ## Execute Staps
 - run CNTKAccess.Test() <- foward
@@ -14,7 +16,7 @@ This code is for checking whether various DeepLearning can be executed with CNTK
 
 <img src="log.JPG">
 
-##Pretraind data
+## Pretraind data
 If you need pretraining data for resnet download from here
 
 https://github.com/Microsoft/CNTK/blob/master/PretrainedModels/Image.md#resnet
