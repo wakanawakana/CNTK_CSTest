@@ -30,8 +30,7 @@ namespace WpfApplication1
             var evalError = CNTKLib.ClassificationError(classifierOutput, labelVariable);
 
             // prepare for training
-            CNTK.TrainingParameterScheduleDouble learningRatePerSample = new CNTK.TrainingParameterScheduleDouble(
-                0.02, TrainingParameterScheduleDouble.UnitType.Sample);
+            CNTK.TrainingParameterScheduleDouble learningRatePerSample = new CNTK.TrainingParameterScheduleDouble(0.02, 1);
             IList<Learner> parameterLearners =
                 new List<Learner>() { Learner.SGDLearner(classifierOutput.Parameters(), learningRatePerSample) };
             var trainer = Trainer.CreateTrainer(classifierOutput, loss, evalError, parameterLearners);
@@ -45,8 +44,9 @@ namespace WpfApplication1
             {
                 Value features, labels;
                 GenerateValueData(minibatchSize, inputDim, numOutputClasses, out features, out labels, device);
+                //TODO: sweepEnd should be set properly instead of false.
                 trainer.TrainMinibatch(
-                    new Dictionary<Variable, Value>() { { featureVariable, features }, { labelVariable, labels } }, device);
+                    new Dictionary<Variable, Value>() { { featureVariable, features }, { labelVariable, labels } }, false, device);
                 TestHelper.PrintTrainingProgress(trainer, minibatchCount, updatePerMinibatches);
             }
 
