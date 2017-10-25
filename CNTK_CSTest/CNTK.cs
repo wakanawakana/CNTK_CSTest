@@ -47,8 +47,8 @@ namespace WpfApplication1
         public static void TrainTest()
         {
             var device = DeviceDescriptor.GPUDevice(0);
-            Console.WriteLine($"======== running LogisticRegression.TrainAndEvaluate using {device.Type} ========");
-            LogisticRegression.TrainAndEvaluate(device);
+//            Console.WriteLine($"======== running LogisticRegression.TrainAndEvaluate using {device.Type} ========");
+//            LogisticRegression.TrainAndEvaluate(device);
 
 //            Console.WriteLine($"======== running MNISTClassifier.TrainAndEvaluate with multilayer perceptron (MLP) classifier using {device.Type} ========");
 //            MNISTClassifier.TrainAndEvaluate(device, false, true);
