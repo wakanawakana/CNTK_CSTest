@@ -3,12 +3,12 @@ Use CNTK from C #
 
 This code is for checking whether various DeepLearning can be executed with CNTK CPU and GPU version
 
-##Build Staps
+## Build Staps
 
 - nuget CNTK.CPUONLY
 - nuget CNTK.GPU
 
-##Execute Staps
+## Execute Staps
 - run CNTKAccess.Test() <- foward
 - run CNTKAccess.TrainTest() <- training
 
